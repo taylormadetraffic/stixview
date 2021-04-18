@@ -5,9 +5,9 @@
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/traut/stixview.git"
+    "url": "git+ssh://git@github.com/taylormadetraffic/stixview.git"
   },
-  "author": "Sergey Polzunov <sergey@polzunov.com>",
+  "author": "Eli Taylor <eli@taylormadetraffic.com> forked from Sergey Polzunov <sergey@polzunov.com>",
   "license": "BSD-3-Clause",
   "private": false,
   "keywords": [
@@ -25,9 +25,9 @@
     "prepublish": "yarn build"
   },
   "bugs": {
-    "url": "https://github.com/traut/stixview/issues"
+    "url": "https://github.com/taylormadetraffic/stixview/issues"
   },
-  "homepage": "https://github.com/traut/stixview",
+  "homepage": "https://github.com/taylormadetraffic/stixview",
   "unpkg": "dist/stixview.bundle.js",
   "dependencies": {
     "cytoscape": "^3.5.0",
