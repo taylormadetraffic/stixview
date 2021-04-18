@@ -154,13 +154,13 @@ function encodeSvg(icon) {
 
 for(let type in iconPerType) {
     if (iconPerType[type].image === false) {
-        console.log('skip')
+        // console.log('skip')
     } else if (typeof iconPerType[type].image === 'string') {
         iconPerType[type].image = encodeSvg(iconPerType[type].image);
     } else {
         let svg = require('!svg-inline-loader?removeSVGTagAttrs=false!../svgs/'+type+'-noback-flat.svg');
         if (svg.indexOf('fill="') > 0) {
-            let color = svg.substr(svg.indexOf('fill="') + 'fill="'.length, 7);
+            let color = svg.substr(svg.indexOf('fill="') + 'fill="'.length, 7); // ex. parses color from fill="#000000"
             console.warn("FOUND COLOR : " + color + " vs. " + iconPerType[type].color);
             iconPerType[type].color = color;
         }
@@ -168,7 +168,7 @@ for(let type in iconPerType) {
     }
 }
 
-console.log(iconPerType)
+// console.log(iconPerType)
 
 const TLP_HEX_COLORS = {
     red: '#ff0000',
